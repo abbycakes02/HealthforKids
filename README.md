@@ -3,11 +3,11 @@ Objective: We are developing an educational initiative aimed at promoting health
 
 # How to use:
 - Download and install Node.js
-- Open the terminal and move into the health_for_kids directory if not already in
-- Install the dependencies by running the command: npm install
-- Run the application in developer mode by running the command: npm run dev
+- Open the terminal and `cd` into the health_for_kids directory if not already in
+- Install the dependencies by running the command: `npm install`
+- Run the application in developer mode by running the command: `npm run dev`
 - Open project in the browser. Vite will display a link, such as http://127.0.0.1:5173 to click on or copy/paste that will take you to the localhost port where the project is running. 
-- Press q + enter to exit and return to the terminal command line.
+- Press `q + enter` to exit and return to the terminal command line.
 
 # How to push code to the repository (recommended to do this frequently):
 1. `git add [file_name]` or `git add .` 
