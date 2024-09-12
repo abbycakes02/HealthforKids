@@ -9,7 +9,7 @@ Objective: We are developing an educational initiative aimed at promoting health
 - Open project in the browser. Vite will display a link, such as http://127.0.0.1:5173 to click on or copy/paste that will take you to the localhost port where the project is running. 
 - Press `q + enter` to exit and return to the terminal command line.
 
-# How to push code to the repository (recommended to do this frequently):
+# Pushing Code to the Repository (Frequent Updates Recommended)
 1. `git add [file_name]` or `git add .` 
     - Use `git add .` to stage all changes, or specify individual files with `git add [file_name]` for more control.
     - Best practice: Stage only relevant files to avoid unintended changes being committed.
