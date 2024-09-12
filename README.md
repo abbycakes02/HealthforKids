@@ -19,5 +19,5 @@ Objective: We are developing an educational initiative aimed at promoting health
 
 3. `git push` 
     - Pushes the committed changes to the remote repository.
-    - Regularly pushing small, incremental changes helps maintain version control and facilitates team collaboration.
+    - Regularly pushing small, incremental changes helps maintain version control
 
