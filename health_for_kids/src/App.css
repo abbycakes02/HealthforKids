@@ -1,50 +1,71 @@
-/* Existing styles */
+/* General body styling */
 body {
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  background-color: #F1FAEE; /* Set background color here */
+  background-color: #F1FAEE;
 }
 
+/* Root element styling */
 #root {
-  width: 100%;
-  max-width: 1280px;
-  padding: 2rem;
-  text-align: center;
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  color: black;
+  display: flex;
+  flex-direction: column; /* Stack header and main content */
+  height: 100vh; /* Full height of the viewport */
 }
 
-/* New styles for positioning logo and navigation */
-
-/* Container for the whole app */
-.App {
-  position: relative;
-  width: 100%;
+/* Header styling */
+.header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Space between logo and nav links */
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem; /* Adjust padding for a compact header */
+  background-color: #F1FAEE; /* Keep background color */
 }
 
-/* Logo styling - Top left corner */
-.App img {
+/* Logo styling */
+.logo-container img {
   width: 100px; /* Adjust logo size as needed */
-  height: auto;
+  height: auto; /* Maintain aspect ratio */
+}
+/* Logo hover effect */
+.logo-container img:hover {
+  transform: scale(1.1); /* Slightly increase size on hover */
 }
 
-/* Navigation bar styling - Top right corner */
-nav {
+
+/* Navigation styling */
+.nav-container {
+  display: flex; /* Flex container for nav items */
+  gap: 20px; /* Space between nav items */
+}
+
+/* Navigation icon styling */
+.nav-icon {
+  width: 80px; /* Adjust icon size as needed */
+  height: auto; /* Maintain aspect ratio */
+  cursor: pointer; /* Show pointer on hover */
+}
+
+.nav-icon:hover {
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Main content area */
+.main-content {
+  flex: 1; /* Allow the main content to grow and take up available space */
+  display: flex; 
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+/* Container for each page */
+.home-container,
+.about-container,
+.quizzes-container,
+.lessons-container {
   display: flex;
-  gap: 40px; /* Increase spacing between items */
-}
-
-/* Styling for navigation links */
-nav img {
-  width: 80px; /* Adjust button image size as needed */
-  height: auto;
-  cursor: pointer;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+  width: 100%; /* Full width for containers */
+  padding: 20px; /* Add some padding */
 }
