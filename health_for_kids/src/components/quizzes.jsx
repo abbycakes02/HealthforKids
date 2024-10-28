@@ -1,5 +1,4 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
 import './quizzes.css';
 import fitness from './quiz_images/fitness.png';
 import healthy_eating from './quiz_images/healthy_eating.png';
@@ -7,35 +6,55 @@ import hygiene from './quiz_images/hygiene.png';
 import mental_health from './quiz_images/mental_health.png';
 import sleep from './quiz_images/sleep.png';
 
+// Import quiz components
+import FitnessQuiz from './quiz_pages/fitnessQuiz';
+import HealthyQuiz from './quiz_pages/healthyQuiz';
+import HygieneQuiz from './quiz_pages/hygieneQuiz';
+import MentalQuiz from './quiz_pages/mentalQuiz';
+import SleepQuiz from './quiz_pages/sleepQuiz';
+
 const Quizzes = () => {
-  const navigate = useNavigate();
+  const [selectedQuiz, setSelectedQuiz] = useState(null);
 
-  const handleQuizClick = (quizId) => {
-    navigate(`/quiz/${quizId}`);
-  };
+  // Quiz data for displaying each quiz button
+  const quizData = [
+    { type: 'fitness', imgSrc: fitness, altText: 'Fitness Quiz', component: <FitnessQuiz /> },
+    { type: 'healthy', imgSrc: healthy_eating, altText: 'Healthy Eating Quiz', component: <HealthyQuiz /> },
+    { type: 'hygiene', imgSrc: hygiene, altText: 'Hygiene Quiz', component: <HygieneQuiz /> },
+    { type: 'mental', imgSrc: mental_health, altText: 'Mental Health Quiz', component: <MentalQuiz /> },
+    { type: 'sleep', imgSrc: sleep, altText: 'Sleep Quiz', component: <SleepQuiz /> }
+  ];
 
+  // Display main quiz selection or the selected quiz component
   return (
     <div className="quizzes-container">
-      <p className="quizzes-text">Take our fun quizzes to test your knowledge about health!</p>
-      <div className="quizzes-grid">
-        <button onClick={() => handleQuizClick(1)} className="quiz-button">
-          <img src={fitness} alt="Fitness Quiz" className="quiz-image" />
-        </button>
-        <button onClick={() => handleQuizClick(2)} className="quiz-button">
-          <img src={healthy_eating} alt="Healthy Eating Quiz" className="quiz-image" />
-        </button>
-        <button onClick={() => handleQuizClick(3)} className="quiz-button">
-          <img src={hygiene} alt="Hygiene Quiz" className="quiz-image" />
-        </button>
-        <button onClick={() => handleQuizClick(4)} className="quiz-button">
-          <img src={mental_health} alt="Mental Health Quiz" className="quiz-image" />
-        </button>
-        <button onClick={() => handleQuizClick(5)} className="quiz-button">
-          <img src={sleep} alt="Sleep Quiz" className="quiz-image" />
-        </button>
-      </div>
+      {selectedQuiz ? (
+        <div>
+          <button onClick={() => setSelectedQuiz(null)} className="back-button">
+            Back
+          </button>
+          {selectedQuiz.component}
+        </div>
+      ) : (
+        <div>
+          <p className="quizzes-text">Take our fun quizzes to test your knowledge about health!</p>
+          <div className="quizzes-grid">
+            {quizData.map((quiz) => (
+              <button 
+                key={quiz.type} 
+                onClick={() => setSelectedQuiz(quiz)} 
+                className="quiz-button"
+              >
+                <img src={quiz.imgSrc} alt={quiz.altText} className="quiz-image" />
+                <p>{quiz.altText}</p>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 };
 
 export default Quizzes;
+

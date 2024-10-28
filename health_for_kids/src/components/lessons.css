@@ -43,4 +43,19 @@
   li:hover {
     text-decoration: underline; /* Underline on hover */
   }
+  .quizzes-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    transition: transform 0.2s;
+  }
+  
+  .quizzes-button:hover {
+    transform: scale(1.05);
+  }
+  
+
   

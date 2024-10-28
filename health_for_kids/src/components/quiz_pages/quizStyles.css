@@ -1,0 +1,66 @@
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.question {
+  color: #1D3557; /* Set the question text color */
+  margin-bottom: 20px; /* Space below the question */
+  font-size: 1.5rem; /* Increase font size for better readability */
+}
+
+.options {
+  display: flex;
+  flex-direction: column; /* Stack options vertically */
+  gap: 10px; /* Add space between options */
+  width: 100%; /* Ensure options take full width */
+}
+
+.option-box {
+  padding: 15px; /* Increase padding for better touch targets */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor for better UX */
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transitions */
+  border: 2px solid #ccc; /* Light border for options */
+  font-weight: bold; /* Make the text bold */
+  font-family: 'Inter', sans-serif; /* Use Inter font */
+  color: #1D3557; /* Set text color */
+  text-align: center; /* Center text within options */
+}
+
+/* Styles for correct and incorrect answers */
+.correct {
+  background-color: #4CAF50; /* Green for correct */
+  border-color: #388E3C; /* Darker green for border */
+}
+
+.incorrect {
+  background-color: #F44336; /* Red for incorrect */
+  border-color: #C62828; /* Darker red for border */
+  animation: shake 0.5s; /* Shake animation for incorrect answer */
+}
+
+/* Shake animation */
+@keyframes shake {
+  0% { transform: translate(0); }
+  25% { transform: translate(-5px, 0); }
+  50% { transform: translate(5px, 0); }
+  75% { transform: translate(-5px, 0); }
+  100% { transform: translate(0); }
+}
+
+/* Back button styles */
+.back-button {
+  margin-top: 20px; /* Space above the button */
+  padding: 10px 20px; /* Padding inside the button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  color: #333; /* Dark text color */
+  font-size: 1.2rem; /* Font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transitions */
+}
+
