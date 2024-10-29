@@ -4,13 +4,15 @@ import './about.css'; // Import the new CSS file
 import avni from './team_photos/avni.png'; // Importing Avni's image
 import abby from './team_photos/abby.png'; // Importing Avni's image
 import leslie from './team_photos/leslie.png'; // Importing Avni's image
+import blank from './team_photos/blank.png'; // Importing Avni's image
 
 // Array containing four unique team members
 const teamMembers = [
   { name: 'Avni', image: avni }, // Use the imported avni directly
   { name: 'Abby', image: abby }, // Replace with the correct path
-  { name: 'Nene', image: '../images/path_to_charlie_image.png' }, // Replace with the correct path
+  { name: 'Nene', image: blank }, // Replace with the correct path
   { name: 'Leslie', image: leslie }, // Replace with the correct path
+
 ];
 
 const About = () => {

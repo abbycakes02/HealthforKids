@@ -12,24 +12,24 @@ const FitnessQuiz = () => {
     },
     {
       question: "What are some fun ways to stay active if you don’t like traditional sports?",
-      options: ["Dance, skateboarding, or swimming", "Watching fitness videos online", "Playing video games with motion controls", "Walking to the store and back"],
+      options: [ "Watching fitness videos online", "Playing video games with motion controls", "Walking to the store and back", "Dance, skateboarding, or swimming"],
       answer: "Dance, skateboarding, or swimming"
     },
     {
       question: "How does regular exercise benefit your mental health, not just your body?",
-      options: ["It releases endorphins that improve mood and reduce stress ", "It makes you feel physically tired so you sleep better", "It gives you something to do, which helps distract from negative thoughts", "It makes your body stronger, which indirectly improves mental health"],
+      options: ["It releases endorphins that improve mood and reduce stress", "It makes you feel physically tired so you sleep better", "It gives you something to do, which helps distract from negative thoughts", "It makes your body stronger, which indirectly improves mental health"],
       answer: "It releases endorphins that improve mood and reduce stress"
 
     },
     {
       question: "What’s the difference between strength training and cardio exercises?",
-      options: ["Strength training builds muscle and endurance; cardio improves heart and lung function", "Cardio is more intense, while strength training is slow and steady", "Strength training is for muscle building; cardio is for burning fat only", "Cardio uses weights; strength training is mostly bodyweight exercises"],
+      options: [ "Cardio is more intense, while strength training is slow and steady", "Strength training is for muscle building; cardio is for burning fat only", "Strength training builds muscle and endurance; cardio improves heart and lung function","Cardio uses weights; strength training is mostly bodyweight exercises"],
       answer: "Strength training builds muscle and endurance; cardio improves heart and lung function"
 
     },
     {
     question: "Why is it important to stretch before and after a workout or physical activity?",
-      options: ["To increase flexibility and help prevent muscle injuries", "To reduce soreness during your workout", "To build more muscle", "To burn more calories before you start your workout"],
+      options: ["To reduce soreness during your workout", "To increase flexibility and help prevent muscle injuries","To build more muscle", "To burn more calories before you start your workout"],
       answer: "To increase flexibility and help prevent muscle injuries"
 
     },

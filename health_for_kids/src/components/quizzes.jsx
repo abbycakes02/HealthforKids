@@ -18,11 +18,11 @@ const Quizzes = () => {
 
   // Quiz data for displaying each quiz button
   const quizData = [
-    { type: 'fitness', imgSrc: fitness, altText: 'Fitness Quiz', component: <FitnessQuiz /> },
-    { type: 'healthy', imgSrc: healthy_eating, altText: 'Healthy Eating Quiz', component: <HealthyQuiz /> },
-    { type: 'hygiene', imgSrc: hygiene, altText: 'Hygiene Quiz', component: <HygieneQuiz /> },
-    { type: 'mental', imgSrc: mental_health, altText: 'Mental Health Quiz', component: <MentalQuiz /> },
-    { type: 'sleep', imgSrc: sleep, altText: 'Sleep Quiz', component: <SleepQuiz /> }
+    { type: 'fitness', imgSrc: fitness, component: <FitnessQuiz /> },
+    { type: 'healthy', imgSrc: healthy_eating, component: <HealthyQuiz /> },
+    { type: 'hygiene', imgSrc: hygiene, component: <HygieneQuiz /> },
+    { type: 'mental', imgSrc: mental_health, component: <MentalQuiz /> },
+    { type: 'sleep', imgSrc: sleep, component: <SleepQuiz /> }
   ];
 
   // Display main quiz selection or the selected quiz component
