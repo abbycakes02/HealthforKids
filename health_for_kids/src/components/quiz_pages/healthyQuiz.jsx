@@ -6,31 +6,32 @@ const HealthyQuiz = () => {
   const navigate = useNavigate();
   const questions = [
     {
-      question: "How much physical activity should you aim for each day to stay healthy?",
-      options: ["60 minutes of moderate-to-vigorous activity", "20-30 minutes of low-intensity exercise", "45 minutes of intense exercise", "15 minutes of cardio and some stretching"],
-      answer: "60 minutes of moderate-to-vigorous activity"
+      question: "What are the five main food groups, and why is it important to eat from each group??",
+      options: ["Protein, fiber, dairy, sugar, and vegetables", "Vegetables, grains, meats, sweets, and dairy", "Fruits, vegetables, grains, protein, and dairy",
+ "Carbs, fruits, dairy, water, and fats"],
+      answer: "Fruits, vegetables, grains, protein, and dairy"
     },
     {
-      question: "What are some fun ways to stay active if you don’t like traditional sports?",
-      options: ["Dance, skateboarding, or swimming", "Watching fitness videos online", "Playing video games with motion controls", "Walking to the store and back"],
-      answer: "Dance, skateboarding, or swimming"
+      question: "How many glasses of water should you drink each day to stay hydrated?",
+      options: ["4 glasses", "8 glasses", "As many as you feel like", "10-12 glasses, depending on the weather"],
+      answer: "8 glasses"
     },
     {
-      question: "How does regular exercise benefit your mental health, not just your body?",
-      options: ["It releases endorphins that improve mood and reduce stress ", "It makes you feel physically tired so you sleep better", "It gives you something to do, which helps distract from negative thoughts", "It makes your body stronger, which indirectly improves mental health"],
-      answer: "It releases endorphins that improve mood and reduce stress"
+      question: "What are some examples of healthy snacks you can choose over junk food?",
+      options: ["Candy, dried fruits, and protein shakes", "Energy drinks, chips, and yogurt-covered raisins", "Granola bars, pretzels, and chocolate milk", "Nuts, fruits, and whole grain crackers"],
+      answer: "Nuts, fruits, and whole grain crackers"
 
     },
     {
-      question: "What’s the difference between strength training and cardio exercises?",
-      options: ["Strength training builds muscle and endurance; cardio improves heart and lung function", "Cardio is more intense, while strength training is slow and steady", "Strength training is for muscle building; cardio is for burning fat only", "Cardio uses weights; strength training is mostly bodyweight exercises"],
-      answer: "Strength training builds muscle and endurance; cardio improves heart and lung function"
+      question: "Why is it important to eat breakfast, especially for teens?",
+      options: ["It helps prevent hunger throughout the entire day", "It boosts energy and concentration for school", "It’s the best time to load up on carbs and sugar", "It replaces the need for lunch"],
+      answer: "It boosts energy and concentration for school"
 
     },
     {
-    question: "Why is it important to stretch before and after a workout or physical activity?",
-      options: ["To increase flexibility and help prevent muscle injuries", "To reduce soreness during your workout", "To build more muscle", "To burn more calories before you start your workout"],
-      answer: "To increase flexibility and help prevent muscle injuries"
+    question: "What are 'empty calories,' and how can you avoid them in your daily diet?",
+      options: ["Calories from sugary and processed foods with little nutritional value", "Foods that provide only energy but no taste", " Foods that are low in fat and sugar but high in fiber", "Calories from foods that don’t fill you up"],
+      answer: "Calories from sugary and processed foods with little nutritional value"
 
     },
     // Add more questions as needed
