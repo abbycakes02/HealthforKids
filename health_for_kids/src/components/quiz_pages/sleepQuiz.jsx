@@ -7,14 +7,14 @@ const SleepQuiz = () => {
   const questions = [
     {
       question: "Why do teens need more sleep than adults, and how much sleep is ideal?",
-      options: ["Teens need 8-10 hours of sleep for growth, learning, and emotional regulation ", "Teens can get by on 4-5 hours as long as they nap", "Teens need the same amount as adults: 6-7 hours",
+      options: ["Teens need 8-10 hours of sleep for growth, learning, and emotional regulation", "Teens can get by on 4-5 hours as long as they nap", "Teens need the same amount as adults: 6-7 hours",
  " Teens need 5-6 hours because they are more energetic"],
       answer: "Teens need 8-10 hours of sleep for growth, learning, and emotional regulation"
     },
     {
       question: "How does using screens before bed affect your ability to fall asleep?",
       options: [" It has no effect as long as you turn off the lights", "The blue light from screens reduces melatonin production, making it harder to fall asleep", " It helps relax your brain after a long day", " It makes you sleepy faster by tiring your eyes"],
-      answer: "The blue light from screens reduces melatonin production, making it harder to fall asleep "
+      answer: "The blue light from screens reduces melatonin production, making it harder to fall asleep"
     },
     {
       question: "What can you do to make sure you get a good night's sleep on school nights?",
@@ -30,7 +30,7 @@ const SleepQuiz = () => {
     },
     {
     question: "Why is a regular bedtime routine important for improving sleep quality?",
-      options: ["It keeps your body tired throughout the day", "It signals your body that it’s time to wind down and promotes better slee", " It ensures you always wake up at the same time", "It prevents you from feeling sleepy during the day"],
+      options: ["It keeps your body tired throughout the day", "It signals your body that it’s time to wind down and promotes better sleep", " It ensures you always wake up at the same time", "It prevents you from feeling sleepy during the day"],
       answer: "It signals your body that it’s time to wind down and promotes better sleep"
 
     },
